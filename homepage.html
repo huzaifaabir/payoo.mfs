@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo MFS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <main id="main-section" class="main-section py-10">
+        <div class="container mx-auto">
+            <div class="header flex justify-between items-center">
+                <div class="logo-balance">
+                    <div class="balance">
+                        <h1 class="text-xl font-extrabold">$<span id="balance">4500</span></h1>
+                        <p class="text-base font-medium text-neutral-500">Available Balance</p>
+                    </div>
+
+                </div>
+                <div class="button">
+                    <a id="log-out" href="#"
+                        class="btn text-neutral-500 border-2 border-neutral-200 p-2 rounded-lg text-base font-medium">Log
+                        Out</a>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <!-- headeing -->
+            <div class="body-item">
+                <h1>🔥 Welcome to Payooo!</h1>
+                <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+                <div class="card-item grid grid-cols-3 gap-4 justify-center items-center my-5">
+                    <a id="add" class="card text-base py-5 px-3 border-2 border-neutral-200" href="">Add Money</a>
+                    <a id="cashout" class="card text-base py-5 px-3 border-2 border-neutral-200" href="">Cashout</a>
+                    <a  id="Transfer" class="card text-base py-5 px-3 border-2 border-neutral-200" href="">Transfer Money</a>
+                    <a  id="Bonus" class="card text-base py-5 px-3 border-2 border-neutral-200" href="">Get Bonus</a>
+                    <a id="Pay-Bill" class="card text-base py-5 px-3 border-2 border-neutral-200" href="">Pay Bill</a>
+                    <a id="Transactions" class="card text-base py-5 px-3 border-2 border-neutral-200" href="">Transactions</a>
+                </div>
+                <!-- card   -->
+                 <!-- form start -->
+                  <div id="form-section" class="form-item hidden">
+                    <h1 class="font-extrabold text-base">Add Money</h1>
+                 <div  class="hero ">
+                    
+                    <div class="hero-content flex-col">
+                      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Amount to Add</span>
+                            </label>
+                            <input id="amount" type="tel" placeholder="Add Amount " class="input input-bordered" autocomplete="off" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Pin Number</span>
+                            </label>
+                            <input id="pin" type="password" placeholder="Enter 4 Digit pin " class="input input-bordered" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="add-button" class="btn btn-primary">Add Money</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <!-- form start -->
+                 <div id="latest-section" class="lates-section">
+                <div class="header flex justify-between items-center mb-5">
+                    <h1 class="text-xl font-extrabold">Latest Payment</h1>
+                    <p id="viewAll" class="text-base text-stone-500 font-medium">View All</p>
+                </div>
+                <div class="pay-item flex flex-col gap-3">
+                    <div class="pay-card text-base py-5 px-3 border-2 border-neutral-200 rounded-lg ">
+                        <a href="#" class="text-base font-bold mb-2">Electricity Bill</a>
+                        <p class="text-3 text-neutral-500 ">Today 01:44 AM</p>
+                    </div>
+                    <div class="pay-card text-base py-5 px-3 border-2 border-neutral-200 rounded-lg ">
+                        <a href="#" class="text-base font-bold mb-2">Electricity Bill</a>
+                        <p class="text-3 text-neutral-500 ">Today 01:44 AM</p>
+                    </div>
+                    <div class="pay-card text-base py-5 px-3 border-2 border-neutral-200 rounded-lg ">
+                        <a href="#" class="text-base font-bold mb-2">Electricity Bill</a>
+                        <p class="text-3 text-neutral-500 ">Today 01:44 AM</p>
+                    </div>
+                    <div class="pay-card text-base py-5 px-3 border-2 border-neutral-200 rounded-lg ">
+                        <a href="#" class="text-base font-bold mb-2">Electricity Bill</a>
+                        <p class="text-3 text-neutral-500 ">Today 01:44 AM</p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
